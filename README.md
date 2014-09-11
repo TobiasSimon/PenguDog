@@ -1,7 +1,8 @@
 What is PenguDog?
 ===================
 
-TBD
+PenguDog is a branch of PenguPilot, contains only the basic software infrastructure (without flight code)
+for applications such as tracking antennas, logging devices, ...
 
 Filesystem Contents
 ===================
