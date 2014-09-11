@@ -4,6 +4,10 @@ What is PenguDog?
 PenguDog is a branch of PenguPilot, which contains only the basic software infrastructure (without flight code)
 for applications such as tracking antennas, logging devices, ...
 
+
+[![Build Status](https://travis-ci.org/TobiasSimon/PenguDog.svg?branch=master)](https://travis-ci.org/TobiasSimon/PenguDog)
+
+
 Filesystem Contents
 ===================
 
