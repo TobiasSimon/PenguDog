@@ -63,7 +63,7 @@ exynos_quad: # ODROID U3 based quadrotor
 
 aircomm:
    id: 1
-   psk: "This is the PenguPilot Standard Pre-Shared Key for NRF24L01+ Communication"
+   psk: "This is the PenguDog Standard Pre-Shared Key for NRF24L01+ Communication"
 
 powerman:
    battery_cells: 4

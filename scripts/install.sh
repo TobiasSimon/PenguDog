@@ -26,20 +26,20 @@
 
 
 cd /usr/local/bin
-sudo ln -f -s $PENGUPILOT_PATH/blackbox/tools/filter_txt_col.py pp_filter_txt_col
-sudo ln -f -s $PENGUPILOT_PATH/blackbox/tools/msgpack_to_txt.py pp_msgpack_to_txt
-sudo ln -f -s $PENGUPILOT_PATH/blackbox/tools/compare_msgpack.py pp_compare_msgpack
-sudo ln -f -s $PENGUPILOT_PATH/opcd/tools/opcd_shell.sh pp_opcd_shell
-sudo ln -f -s $PENGUPILOT_PATH/autopilot/tools/replay.py pp_replay
-sudo ln -f -s $PENGUPILOT_PATH/autopilot/tools/shell/pilot_shell.sh pp_pilot_shell
-sudo ln -f -s $PENGUPILOT_PATH/scripts/clear_pidfiles.sh pp_clear_pidfiles
-sudo ln -f -s $PENGUPILOT_PATH/svctrl/svctrl.py pp_svctrl
-sudo ln -f -s $PENGUPILOT_PATH/icarus/tools/icarus_shell.sh pp_icarus_shell
-sudo ln -f -s $PENGUPILOT_PATH/autopilot/tools/calibration/cal_start.sh pp_cal_start
-sudo ln -f -s $PENGUPILOT_PATH/autopilot/tools/calibration/cal_finish.sh pp_cal_finish
-sudo ln -f -s $PENGUPILOT_PATH/autopilot/tools/omap3_pwm_test.py pp_omap3_pwm_test
-sudo ln -f -s $PENGUPILOT_PATH/scl/tools/scl_dump_msgpack.py pp_scl_dump_msgpack
-sudo ln -f -s $PENGUPILOT_PATH/scl/tools/scl_show_stats.py pp_scl_show_stats
-sudo ln -f -s $PENGUPILOT_PATH/rc_cal/tools/rc_cal.py pp_rc_cal
-sudo ln -f -s $PENGUPILOT_PATH/rc_cal/tools/rc_cal_dump.py pp_rc_cal_dump
+sudo ln -f -s $PENGUDOG_PATH/blackbox/tools/filter_txt_col.py pd_filter_txt_col
+sudo ln -f -s $PENGUDOG_PATH/blackbox/tools/msgpack_to_txt.py pd_msgpack_to_txt
+sudo ln -f -s $PENGUDOG_PATH/blackbox/tools/compare_msgpack.py pd_compare_msgpack
+sudo ln -f -s $PENGUDOG_PATH/opcd/tools/opcd_shell.sh pd_opcd_shell
+sudo ln -f -s $PENGUDOG_PATH/autopilot/tools/replay.py pd_replay
+sudo ln -f -s $PENGUDOG_PATH/autopilot/tools/shell/pilot_shell.sh pd_pilot_shell
+sudo ln -f -s $PENGUDOG_PATH/scripts/clear_pidfiles.sh pd_clear_pidfiles
+sudo ln -f -s $PENGUDOG_PATH/svctrl/svctrl.py pd_svctrl
+sudo ln -f -s $PENGUDOG_PATH/icarus/tools/icarus_shell.sh pd_icarus_shell
+sudo ln -f -s $PENGUDOG_PATH/autopilot/tools/calibration/cal_start.sh pd_cal_start
+sudo ln -f -s $PENGUDOG_PATH/autopilot/tools/calibration/cal_finish.sh pd_cal_finish
+sudo ln -f -s $PENGUDOG_PATH/autopilot/tools/omap3_pwm_test.py pd_omap3_pwm_test
+sudo ln -f -s $PENGUDOG_PATH/scl/tools/scl_dump_msgpack.py pd_scl_dump_msgpack
+sudo ln -f -s $PENGUDOG_PATH/scl/tools/scl_show_stats.py pd_scl_show_stats
+sudo ln -f -s $PENGUDOG_PATH/rc_cal/tools/rc_cal.py pd_rc_cal
+sudo ln -f -s $PENGUDOG_PATH/rc_cal/tools/rc_cal_dump.py pd_rc_cal_dump
 

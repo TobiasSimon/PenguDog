@@ -25,4 +25,4 @@
 # GNU General Public License for more details.
 
 
-rm -rf $HOME/.PenguPilot/run/*
+rm -rf $HOME/.PenguDog/run/*

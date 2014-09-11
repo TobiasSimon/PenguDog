@@ -46,7 +46,7 @@ void _main(int argc, char *argv[])
 int main(int argc, char *argv[])
 {
    char pid_file[1024];
-   sprintf(pid_file, "%s/.PenguPilot/run/gpsp.pid", getenv("HOME"));
+   sprintf(pid_file, "%s/.PenguDog/run/gpsp.pid", getenv("HOME"));
    daemonize(pid_file, _main, _cleanup, argc, argv);
    return 0;
 }

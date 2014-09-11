@@ -47,7 +47,7 @@ class Config:
    def __init__(self):
       self.LEAF_TYPES = [str, int, float, bool]
       tail = os.sep + 'config' + os.sep + 'params.yaml'
-      self.base_path = os.getenv('PENGUPILOT_PATH') + tail
+      self.base_path = os.getenv('PENGUDOG_PATH') + tail
       self.overlay_path = user_data_dir + tail
       # load base config and overlay of present:
       self.base = yaml.load(file(self.base_path))

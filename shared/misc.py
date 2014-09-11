@@ -43,7 +43,7 @@ import ctypes, ctypes.util
 
 # user data directory:
 
-user_data_dir = getenv('HOME') + sep + '.PenguPilot'
+user_data_dir = getenv('HOME') + sep + '.PenguDog'
 msgpack_log_path = user_data_dir + sep + 'log'
 msgpack_lastlog_path = msgpack_log_path + sep + 'autopilot_debug.msgpack'
 

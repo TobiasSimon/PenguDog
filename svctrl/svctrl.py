@@ -66,7 +66,7 @@ def read_config():
 
    try:
       # load yaml file:
-      comp_base = os.getenv('PENGUPILOT_PATH')
+      comp_base = os.getenv('PENGUDOG_PATH')
       conf_file = comp_base + os.sep + 'config' + os.sep + 'services.yaml'
       services = yaml.load(file(conf_file))
 

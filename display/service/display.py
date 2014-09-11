@@ -161,7 +161,7 @@ def decorations(draw):
    hline(draw, H - 1)
 
 
-def fit_text_width(txt, img_fraction, font_path = getenv('PENGUPILOT_PATH') + '/display/service/verdana.ttf'):
+def fit_text_width(txt, img_fraction, font_path = getenv('PENGUDOG_PATH') + '/display/service/verdana.ttf'):
    # taken from: http://stackoverflow.com/a/4902713
    fontsize = 1
    font = ImageFont.truetype(font_path, fontsize)
@@ -333,7 +333,7 @@ def main(name):
    global socket_map, font, spinning, caution_written
    socket_map = generate_map(name)
 
-   font = ImageFont.truetype(getenv('PENGUPILOT_PATH') + '/display/service/verdana.ttf', 11)
+   font = ImageFont.truetype(getenv('PENGUDOG_PATH') + '/display/service/verdana.ttf', 11)
    
    t = Thread(target = spinning_reader)
    t.daemon = True

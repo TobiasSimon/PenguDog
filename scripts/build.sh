@@ -10,7 +10,7 @@
 # |  GNU/Linux based |___/  Multi-Rotor UAV Autopilot |
 # |___________________________________________________|
 #
-# This Script builds the PenguPilot Software
+# This Script builds the PenguDog Software
 #
 # Copyright (C) 2014 Tobias Simon, Ilmenau University of Technology
 #

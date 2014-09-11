@@ -21,8 +21,8 @@ Starting the Service
 
     $ pp_svctrl --start gps
     dependency resolution order: ['opcd', 'gps']
-    starting opcd ... ~/PenguPilot/opcd/service/opcd.py [OK]
-    starting gpsp ... ~/PenguPilot/gpsp/service/gpsp [OK]
+    starting opcd ... ~/PenguDog/opcd/service/opcd.py [OK]
+    starting gpsp ... ~/PenguDog/gpsp/service/gpsp [OK]
 
 As you can see, the service depends on the opcd, which provides configuration parameters such as the serial port, and the serial baud rate.
 
@@ -38,6 +38,6 @@ Additional Information
 ----------------------
 
 As an additional feature, the gps publisher sets the system's date and time based on GPS time and position information (timezone).
-GPSP uses a third-party library, which is shipped with PenguPilot:
+GPSP uses a third-party library, which is shipped with PenguDog:
 [NMEALib](https://github.com/AHR-Project/nmealib)
 

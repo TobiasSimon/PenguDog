@@ -6,5 +6,5 @@ This code is for text-based logging only; it does not record numeric data such a
 
 The structure is shown in the following figure:
 
-![Logging Infrastructure](https://raw.github.com/PenguPilot/PenguPilot/master/logger/logger_arch.png)
+![Logging Infrastructure](https://raw.github.com/PenguDog/PenguDog/master/logger/logger_arch.png)
 

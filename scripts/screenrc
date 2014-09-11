@@ -2,12 +2,12 @@ defnonblock on
 defscrollback 65536
 defutf8 on
 
-chdir PenguPilot
+chdir PenguDog
 
 screen bash
-title "PenguPilot"
+title "PenguDog"
 
-screen /root/PenguPilot/autopilot/tools/logger.py
+screen /root/PenguDog/autopilot/tools/logger.py
 title "logger"
 
 split

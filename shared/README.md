@@ -14,5 +14,5 @@ Utility Functions
 -----------------
 
 This folder contains utility code which is used by the
-different subsystems of PenguPilot.
+different subsystems of PenguDog.
 

@@ -131,7 +131,7 @@ void main_wrap(int argc, char *argv[])
 int main(int argc, char *argv[])
 {
    char pid_file[1024];
-   sprintf(pid_file, "%s/.PenguPilot/run/gpstime.pid", getenv("HOME"));
+   sprintf(pid_file, "%s/.PenguDog/run/gpstime.pid", getenv("HOME"));
    daemonize(pid_file, main_wrap, _cleanup, argc, argv);
    return 0;
 }

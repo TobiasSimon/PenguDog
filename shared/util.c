@@ -33,7 +33,7 @@ void user_data_dir(char *buffer)
 {
    char *home = getenv("HOME");
    assert(home);
-   sprintf(buffer, "%s/.PenguPilot", home);
+   sprintf(buffer, "%s/.PenguDog", home);
 }
 
 
