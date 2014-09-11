@@ -33,13 +33,6 @@
   sockets:
    - log_data_pub: sub
 
-- name: mavlink
-  sockets:
-   - gps: sub
-   - power: sub
-   - gps: pub
-   - sats: pub
-
 - name: gpstime
   sockets:
    - gps: sub
@@ -61,78 +54,13 @@
 
 - name: svctrl
 
-- name: gps_test
-  sockets:
-   - gps: sub
-
-- name: twl4030_madc
-  sockets:
-   - power: pub
-
 - name: console_logger
   sockets:
   - log_data_pub: sub
 
-- name: remote
-  sockets:
-   - rc_raw: pub
-
-- name: arduino
-  sockets:
-   - power: pub
-   - rc_raw: pub
-
-- name: ads1x15
-  sockets:
-   - power: pub
-
-- name: mission
-  sockets:
-   - icarus_ctrl: req
-   - icarus_state: sub
-
-- name: icarus
-  sockets:
-   - icarus_ctrl: rep
-   - icarus_state: pub
-   - ap_ctrl: req
-   - ap_mon: sub
-   - powerman: sub
-
 - name: wifi_sensor
   sockets:
    - networks: pub
-
-- name: blackbox
-  sockets:
-   - blackbox: sub
-
-- name: autopilot
-  sockets:
-   - blackbox: pub
-   - gps: sub
-   - decl: sub
-   - rc_cal: sub
-   - ap_ctrl: rep
-   - ap_mon: pub
-   - power: sub
-   - motors_spinning: pub
-   - elev: sub
-
-- name: optimizer
-  sockets:
-   - blackbox: sub
-
-- name: pilot_shell
-  sockets:
-   - ap_ctrl: req
-   - ap_mon: sub
-
-- name: powerman
-  sockets:
-   - powerman_ctrl: rep
-   - power: sub
-   - powerman: pub
 
 - name: opcd
   sockets:
@@ -140,24 +68,6 @@
    - opcd_ctrl: rep
 
 - name: opcd_shell
-
-- name: aircomm
-  sockets:
-   - aircomm_in: sub
-   - aircomm_out: pub
-
-- name: rc_cal
-  sockets:
-   - rc_raw: sub
-   - rc_cal: pub
-
-- name: rc_cal_tool
-  sockets:
-   - rc_raw: sub
-
-- name: rc_cal_dump
-  sockets:
-   - rc_cal: sub
 
 - name: display
   sockets:
@@ -168,16 +78,6 @@
    - sats: sub
    - decl: sub
    - elev: sub
-
-- name: heartbeat
-  sockets:
-   - gps: sub
-   - powerman: sub
-
-- name: aircomm_app
-  sockets:
-   - aircomm_out: sub
-   - aircomm_in: pub
 
 - name: wifi_loc
   sockets:

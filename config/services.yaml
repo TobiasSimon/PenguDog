@@ -26,46 +26,12 @@
 
 # high-priority system services:
 
-autopilot:
-   binary: 'autopilot/service/autopilot'
-   depends: [gpsp, geomag, powerman, arduino, rc_cal]
-   priority: sys_high
 
 
 # medium-priority system services:
 
-icarus:
-   binary: 'icarus/service/icarus.py'
-   depends: [autopilot]
-   priority: sys_medium
-
-arduino:
-   binary: 'arduino/service/arduino'
-   platforms: [exynos_quad]
-   priority: sys_medium
-
-rc_cal:
-   binary: 'rc_cal/service/rc_cal'
-   depends: [remote, arduino]
-   priority: sys_medium
-
-ads1x15:
-   binary: 'ads1x15/service/ads1x15.py'
-   platforms: [pi_quad]
-   priority: sys_medium
-
 gpsp:
    binary: 'gpsp/service/gpsp'
-   priority: sys_medium
-
-twl4030_madc:
-   binary: 'twl4030_madc/service/twl4030_madc.py'
-   platforms: [overo_quad]
-   priority: sys_medium
-
-remote:
-   binary: 'remote/service/remote'
-   platforms: [overo_quad, pi_quad]
    priority: sys_medium
 
 
@@ -75,36 +41,10 @@ opcd:
   binary: 'opcd/service/opcd.py'
   priority: sys_low
 
-mavlink:
-  binary: 'mavlink/service/mavlink.py'
-  priority: sys_low
-
-powerman:
-  binary: 'powerman/service/powerman.py'
-  depends: [arduino, twl4030_madc, ads1x15]
-  priority: sys_low
-
 display:
   binary: 'display/service/display.py'
   platforms: [overo_quad]
-  depends: [powerman, geomag, elevmap, rc_cal]
-  priority: sys_low
-
-emerg_kill:
-  binary: 'emerg_kill/service/emerg_kill.py'
-  priority: sys_low
-
-blackbox:
-  binary: 'blackbox/service/blackbox.py'
-  priority: sys_low
-
-aircomm:
-  binary: 'aircomm/service/aircomm.py'
-  priority: sys_low
-
-heartbeat:
-  binary: 'heartbeat/service/heartbeat.py'
-  depends: [gpsp, powerman, aircomm]
+  depends: [geomag, elevmap]
   priority: sys_low
 
 geomag:

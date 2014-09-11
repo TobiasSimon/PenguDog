@@ -32,13 +32,13 @@ void _main(int argc, char *argv[])
    opcd_params_init("", 0);
    char *plat = NULL;
    opcd_param_get("platform", &plat);
-   if (strcmp(plat, "overo_quad") == 0 || strcmp(plat, "exynos_quad") == 0)
+   if (strcmp(plat, "overo_quad") == 0 || strcmp(plat, "pi_dog") == 0 || strcmp(plat, "exynos_quad") == 0)
    {
       main_serial();
    }
    else if (strcmp(plat, "pi_quad") == 0)
    {
-      main_i2c();   
+      main_i2c();
    }
 }
 
