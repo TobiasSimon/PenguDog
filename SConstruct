@@ -128,6 +128,6 @@ gpst_bin = env.Program('gpstime/service/gpstime', collect_files(gpst_dir + 'serv
 Requires(gpst_bin, common_libs)
 
 # Display:
-display_src = map(lambda x: 'display/shared/' + x, ['pyssd1306.c', 'pyssd1306.i', 'ssd1306.c']) + ['shared/i2c/i2c.c']
-env.SharedLibrary('display/shared/_pyssd1306.so', display_src)
+#display_src = map(lambda x: 'display/shared/' + x, ['pyssd1306.c', 'pyssd1306.i', 'ssd1306.c']) + ['shared/i2c/i2c.c']
+#env.SharedLibrary('display/shared/_pyssd1306.so', display_src)
 

@@ -24,10 +24,10 @@
 # GNU General Public License for more details.
 
 
-pi_quad: # Raspberry PI based quadrotor
-   gpsp_serial: # GPS publisher
-      path: "/dev/ttyO2"
-      speed: 115200
+pi_dog:
+   gpsp_serial:
+      path: "/dev/ttyAMA0"
+      speed: 9600
 
 
 logger:
